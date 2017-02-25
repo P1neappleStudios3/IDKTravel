@@ -1,0 +1,67 @@
+{# by default, Flask looks in the templates folder #}
+{% extends "base/base01.html" %}
+
+
+{# Place style sheets here #}
+{% block stylesheets %}
+<!-- Place style sheets here -->
+{% endblock %}
+
+
+{# Place scripts in head here #}
+{% block headScripts %}
+<!-- Place head scripts here -->
+{% endblock %}
+
+
+
+{# Place body content here #}
+{% block content %}
+<h1>Account Registration</h1>
+<hr />
+<a href="{{ site }}/">Home</a>  |
+<a href="{{ site }}/register">Register</a>  |
+<a href="{{ site }}/login">Log In</a>
+<hr />
+<br /><br />
+
+
+
+<form>
+<table border="1" width="45%">
+    <tr>
+        <td colspan="2"><h3>Account Registration</h3></td>
+    </tr>
+    <tr>
+        <td><label>Email:</label></td>
+        <td><input type="text" /></td>
+    </tr>
+    <tr>
+        <td><label>Password:</label></td>
+        <td><input type="password" /></td>
+    </tr>
+    <tr>
+        <td><label>Confirm Password:</label></td>
+        <td><input type="password" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" /></td>
+    </tr>
+</table>
+</form>
+
+
+<br />
+
+<p>or sign up using:</p>
+
+<a href="">Facebook</a>  |
+<a href="">Google+</a>
+{% endblock %}
+
+
+
+{# Place body scripts here #}
+{% block bodyScripts %}
+<!-- Place body scripts here -->
+{% endblock %}

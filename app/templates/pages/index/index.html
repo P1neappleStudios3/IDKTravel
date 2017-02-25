@@ -1,0 +1,35 @@
+{# by default, Flask looks in the templates folder #}
+{% extends "base/base01.html" %}
+
+
+{# Place style sheets here #}
+{% block stylesheets %}
+<!-- Place style sheets here -->
+{% endblock %}
+
+
+{# Place scripts in head here #}
+{% block headScripts %}
+<!-- Place head scripts here -->
+{% endblock %}
+
+
+
+{# Place body content here #}
+{% block content %}
+<h1>Home</h1>
+<hr />
+<a href="{{ site }}/">Home</a>  |
+<a href="{{ site }}/register">Register</a>  |
+<a href="{{ site }}/login">Log In</a>
+<hr />
+
+
+{% endblock %}
+
+
+
+{# Place body scripts here #}
+{% block bodyScripts %}
+<!-- Place body scripts here -->
+{% endblock %}
